@@ -1,0 +1,188 @@
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 4.375rem;
+  }
+
+  .navbar-brand img {
+    width: 200px;
+  }
+
+  .intro-about h1 {
+    font-size: 2.0625rem;
+  }
+  .intro-about h2 {
+    font-size: 2.0625rem;
+  }
+
+  .intro i {
+    font-size: 1.25rem;
+  }
+  .intro-image {
+    width: 565px;
+  }
+
+  .about-content {
+    height: calc(0.5rem + 40vmax);
+  }
+
+  .about-header {
+    font-size: 90px;
+  }
+
+  .about-header::after {
+    font-size: 75px;
+  }
+
+  .about-text {
+    font-size: 21px;
+  }
+
+  .portfolio-content {
+    height: calc(0.5rem + 40vmax);
+  }
+
+  .portfolio-header {
+    font-size: 4.375rem;
+    margin-top: 0;
+  }
+
+  .portfolio-header::after {
+    font-size: 3.4375rem;
+  }
+
+  .portfolio-slider {
+    justify-content: center;
+  }
+
+  .portfolio-swiper {
+    width: 300px;
+    height: 380px;
+  }
+
+  #contactContent {
+    margin-top: 20vmax;
+  }
+
+  .contact-content {
+    height: calc(0.5rem + 75vmax);
+  }
+
+  .contact-header {
+    font-size: 4.375rem;
+    margin-top: 0;
+  }
+
+  .contact-header::after {
+    font-size: 3.4375rem;
+  }
+
+  .contact-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .footer_brand {
+    font-size: 35px;
+  }
+
+  .copyright_text {
+    font-size: 14px;
+  }
+  .copyright_text span {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 993px) {
+  .mobile-collapse {
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    clip-path: none;
+    flex: 1;
+    justify-content: end;
+    transform: translateX(0);
+  }
+  .navbar-collapse {
+    position: relative !important;
+    top: 0 !important;
+    justify-content: end !important;
+    background-color: inherit !important;
+  }
+
+  .intro-image {
+    width: 650px;
+  }
+
+  .form-container {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    justify-content: space-between;
+  }
+  .intro-image {
+    width: 530px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-content {
+    height: 40vh;
+  }
+
+  .about-text {
+    font-size: 18px;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .portfolio-content {
+    height: 60vh;
+  }
+
+  .portfolio-slider {
+    align-items: start !important;
+    justify-content: center;
+  }
+
+  .portfolio-swiper {
+    width: 240px;
+    height: 320px;
+  }
+
+  #contactSection {
+    margin-top: 15vmax;
+  }
+
+  .contact-content {
+    height: 65vh;
+  }
+
+  .contact-form {
+    align-items: start;
+    justify-content: center;
+  }
+
+  .contact-text {
+    align-items: start;
+  }
+  .contact-text h2 {
+    text-align: left;
+  }
+
+  .footer_brand {
+    font-size: 35px;
+  }
+
+  .contact-text h2 {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1400px) {
+  .intro-image {
+    width: 600px;
+  }
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omar Mohamed</title>
+    <link rel="icon" type="image/webp" href="./omlogo.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div id="pageContainer" class="container">
+      <nav class="navbar navbar-expand-lg text-light">
+        <a class="navbar-brand user-select-none" href="">OM</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="mobile-collapse" id="navbarNav">
+          <ul class="navbar-nav gap-5">
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutContent">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolioContent">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactContent">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Header -->
+      <header class="header mt-md-5 mt-lg-0">
+        <div class="flex-lg-row justify-content-lg-between intro">
+          <!-- Left Icons -->
+          <div class="flex-lg-column py-lg-0 intro-icon-left">
+            <div class="instagram-icon">
+              <a href="#">
+                <i class="fab fa-instagram my-lg-4"></i>
+              </a>
+            </div>
+            <div class="facebook-icon">
+              <a href="#">
+                <i class="fab fa-facebook my-lg-4"></i>
+              </a>
+            </div>
+            <div class="pinterest-icon">
+              <a href="#">
+                <i class="fab fa-pinterest my-lg-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Center Image & Text -->
+          <div class="position-absolute intro-image">
+            <div class="position-absolute w-100 user-select-none">
+              <img src="./images/blob2.svg" alt="" class="sub-circle" />
+            </div>
+            <div class="position-absolute w-100 user-select-none">
+              <img src="./images/blob.svg" alt="" class="main-circle" />
+            </div>
+            <div class="intro-about">
+              <h1>
+                Hello
+                <br />
+                I am Omar
+                <br />
+              </h1>
+              <h2>Web Developer</h2>
+            </div>
+          </div>
+
+          <!-- Right Icons -->
+          <div class="flex-lg-column py-lg-0 intro-icon-right">
+            <div class="mail-icon">
+              <a href="mailto:omarmoh3010@outlook.com">
+                <i class="fa-solid fa-envelope my-lg-4"></i>
+              </a>
+            </div>
+            <div class="linkedin-icon">
+              <a href="https://linkedin.com/in/omar3010">
+                <i class="fab fa-linkedin my-lg-4"></i>
+              </a>
+            </div>
+            <div class="github-icon">
+              <a href="https://github.com/O-marss/">
+                <i class="fab fa-github my-lg-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="aboutContent">
+          <div class="about-content row w-100 mx-auto overflow-hidden">
+            <div
+              class="col-lg-5 d-flex align-items-end justify-content-center mb-5 mb-lg-0 justify-content-lg-end align-items-lg-center overflow-hidden"
+              data-order="2"
+            >
+              <h1 class="about-header">About</h1>
+            </div>
+            <div
+              id="centerLine"
+              class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center overflow-hidden"
+              data-order="1"
+            >
+              <div class="center-line"></div>
+            </div>
+            <div
+              class="col-lg-5 d-flex justify-content-center align-items-center justify-content-lg-start overflow-hidden"
+            >
+              <div class="about-text" data-order="3">
+                <p class="m-0">Web Developer</p>
+                <p class="m-0">Lifelong Learner</p>
+                <p class="m-0">Minimalist Design Lover</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolioContent">
+          <div class="portfolio-content row w-100 mx-auto">
+            <div
+              class="col-lg-5 d-flex align-items-end justify-content-center mb-5 mb-lg-0 justify-content-lg-end align-items-lg-center overflow-hidden"
+            >
+              <div>
+                <h1 class="portfolio-header">PORTFOLIO</h1>
+              </div>
+            </div>
+            <div
+              class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center lg:overflow-hidden"
+            >
+              <div class="portfolio-line"></div>
+            </div>
+            <div class="col-lg-5 portfolio-slider lg:overflow-hidden">
+              <div class="slider">
+                <!-- Replace this with actual portfolio content or a slider -->
+                <div class="swiper mySwiper portfolio-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide portfolio-swiper-slide">
+                      <div class="card rounded-0 border-0 portfolio-card">
+                        <img src="images/project1.jpeg" alt="Bookmarker" />
+                        <a
+                          href="https://o-marss.github.io/bookmark/"
+                          class="card-overlay"
+                        >
+                          <h2 class="project-name">Bookmarker</h2>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide portfolio-swiper-slide">
+                      <div class="card rounded-0 border-0 portfolio-card">
+                        <img src="images/project2.jpeg" alt="Mealify" />
+                        <a
+                          href="https://o-marss.github.io/mealify-task/"
+                          class="card-overlay"
+                        >
+                          <h2 class="project-name">Mealify</h2>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide portfolio-swiper-slide">
+                      <div class="card rounded-0 border-0 portfolio-card">
+                        <img
+                          src="images/project3.jpeg"
+                          alt="Daniels Portfolio"
+                        />
+                        <a
+                          href="https://o-marss.github.io/daniels/"
+                          class="card-overlay"
+                        >
+                          <h2 class="project-name">Daniels Portfolio</h2>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide portfolio-swiper-slide">
+                      <div class="card rounded-0 border-0 portfolio-card">
+                        <img src="images/project4.jpeg" alt="DailyForecasts" />
+                        <a
+                          href="https://o-marss.github.io/weatherPage/"
+                          class="card-overlay"
+                        >
+                          <h2 class="project-name">DailyForecasts</h2>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contactContent">
+          <div class="contact-content row w-100 mx-auto">
+            <div
+              class="col-lg-5 d-flex align-items-center justify-content-center mb-5 mb-lg-0 justify-content-lg-end align-items-lg-center overflow-hidden"
+            >
+              <div>
+                <h1 class="contact-header">Contact</h1>
+              </div>
+            </div>
+            <div
+              class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center overflow-hidden"
+            >
+              <div class="contact-line"></div>
+            </div>
+            <div class="col-lg-5 py-3 contact-form overflow-hidden">
+              <div
+                class="row container position-relative form-container pb-5 pb-md-0"
+              >
+                <div id="contactText" class="col contact-text">
+                  <div>
+                    <h2><span>Interested in working together?</span></h2>
+                    <h2 class="mb-5">
+                      <span>Let’s make something great.</span>
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  class="col-12 mb-5 row justify-content-center justify-content-lg-start"
+                >
+                  <div class="input-container col-10 md:col-8">
+                    <input
+                      class="form-input user-input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      aria-label="Your name"
+                      required
+                    />
+                    <label for="name" class="form-label">
+                      <span class="label-span">Your Name</span>
+                    </label>
+                    <span class="label-line"></span>
+                  </div>
+                </div>
+                <div
+                  class="col-12 mb-5 row justify-content-center justify-content-lg-start"
+                >
+                  <div class="col-10 md:col-8 input-container">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-input user-input"
+                      required
+                    />
+                    <label for="email" class="form-label">
+                      <span class="label-span">Your Email</span>
+                    </label>
+                    <span class="label-line"></span>
+                  </div>
+                </div>
+                <div
+                  class="col-12 mb-3 row justify-content-center justify-content-lg-start"
+                >
+                  <div class="col-10 md:col-8 input-container">
+                    <textarea
+                      class="user-input textarea-input pb-0 z-3 bg-transparent"
+                      name="message"
+                      id="message"
+                      required
+                    ></textarea>
+                    <label for="message" class="textarea-label">
+                      <span class="label-span textarea-span"
+                        >Tell me about your project</span
+                      >
+                    </label>
+                    <span class="label-line"></span>
+                  </div>
+                </div>
+                <div class="col-3 px-0">
+                  <button type="submit" class="btn send-btn">
+                    <span>Send</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div>
+          <div
+            class="row justify-content-center align-items-center w-100 mx-auto"
+          >
+            <div>
+              <div class="footer_brand">OM</div>
+            </div>
+            <div>
+              <div class="copyright_text">
+                © 2024 <span>Omar Mohamed</span> - All Rights Reserved
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

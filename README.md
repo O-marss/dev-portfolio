@@ -4,7 +4,7 @@ A simple and interactive **portfolio website** built using **Vanilla JavaScript,
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio](https://yourusername.github.io/repository-name/)
+🔗 [View Portfolio](https://o-marss.github.io/dev-portfolio/)
 
 ## 🛠️ Technologies Used
 

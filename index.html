@@ -36,13 +36,20 @@
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
-    <div id="pageContainer" class="container">
+    <div class="progress-container" style="opacity: 1">
+      <div class="progress-bar" style="height: 0%"></div>
+    </div>
+
+    <div class="loader">
+      <div class="loader-logo">
+        <span class="loader-svg navbar-brand text-white">OM</span>
+      </div>
+    </div>
+
+    <div id="pageContainer" class="container wrapper">
       <nav class="navbar navbar-expand-lg text-light">
         <a class="navbar-brand user-select-none" href="">OM</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-        >
+        <button class="navbar-toggler" type="button">
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="mobile-collapse" id="navbarNav">
@@ -83,21 +90,59 @@
           </div>
 
           <!-- Center Image & Text -->
-          <div class="position-absolute intro-image">
-            <div class="position-absolute w-100 user-select-none">
-              <img src="./images/blob2.svg" alt="" class="sub-circle" />
-            </div>
-            <div class="position-absolute w-100 user-select-none">
-              <img src="./images/blob.svg" alt="" class="main-circle" />
-            </div>
+          <div class="intro-image">
+            <svg
+              class="sub-circle position-absolute"
+              id="ec_light"
+              viewBox="0 0 720 560"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="transform: matrix(1, 0, 0, 1, 0, 0)"
+            >
+              <path
+                id="ec_l"
+                d="M666 382C666 530.547 501.915 509 346 509C190.085 509 42 413.547 42 265C42 116.453 221.085 62 377 62C514.611 69.1488 647.946 239.898 666 382Z"
+                fill="white"
+                data-svg-origin="42 62"
+                transform="matrix(1,0,0,1,0,0)"
+              ></path>
+            </svg>
+
+            <svg
+              class="main-circle position-absolute"
+              id="ec_dark"
+              viewBox="0 0 720 560"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="ec"
+                d="M692.1703303141159 236.49642126534042C692.1703303141159 386.6344212653404 563.5953080237437 529.9398740793932 399.3668770300115 524.9009830438752C242.15287703001152 524.9009830438752 47.71756098986818 492.478096872553 29.035558973097533 376.57711382867785C12.945937669799045 231.93920583703502 142.16265179306237 37.36787569169948 303.7048236609785 34.370585962392695C398.02801775570043 35.67887955178384 692.1703303141159 69.1777662655663 692.1703303141159 236.49642126534042Z"
+                fill="#0E0E0E"
+              ></path>
+            </svg>
+
             <div class="intro-about">
               <h1>
-                Hello
-                <br />
-                I am Omar
-                <br />
+                Hello <br />
+                I am Omar<br />
+                <div
+                  class="intro__position"
+                  style="transform: matrix(1, 0, 0, 1, 0, 0)"
+                >
+                  <div
+                    class="intro__glitch intro__glitch--top"
+                    style="
+                      font-weight: 400;
+                      transform: matrix(1, 0, 0, 1, 0, 0);
+                      opacity: 1;
+                      text-shadow: rgb(153, 153, 153) 0px 0px 0px;
+                    "
+                  >
+                    Web Developer
+                  </div>
+                </div>
               </h1>
-              <h2>Web Developer</h2>
             </div>
           </div>
 
@@ -119,56 +164,113 @@
               </a>
             </div>
           </div>
+
+          <div class="intro__scroll">
+            <svg
+              id="scroll"
+              viewBox="0 0 177 354"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="bottom"
+                d="M177 265.5C177 314.377 137.377 354 88.5 354C39.6228 354 0 314.377 0 265.5C0 216.623 39.6228 177 88.5 177C137.377 177 177 216.623 177 265.5Z"
+              ></path>
+              <path
+                id="middle"
+                d="M0 88H177V266H0V88Z"
+                data-svg-origin="0 88"
+              ></path>
+              <path
+                id="top"
+                d="M177 88.5C177 137.377 137.377 177 88.5 177C39.6228 177 0 137.377 0 88.5C0 39.6228 39.6228 0 88.5 0C137.377 0 177 39.6228 177 88.5Z"
+                data-svg-origin="0 0"
+              ></path>
+              <line
+                id="wheel"
+                x1="90"
+                y1="86"
+                x2="90"
+                y2="96"
+                stroke="white"
+                stroke-width="5"
+                stroke-linecap="round"
+                data-svg-origin="90 268"
+              ></line>
+            </svg>
+          </div>
         </div>
       </header>
 
       <main>
         <section id="aboutContent">
-          <div class="about-content row w-100 mx-auto overflow-hidden">
+          <div
+            class="about-content row w-100 mx-auto overflow-hidden gap-5 gap-md-0"
+          >
             <div
-              class="col-lg-5 d-flex align-items-end justify-content-center mb-5 mb-lg-0 justify-content-lg-end align-items-lg-center overflow-hidden"
+              class="col-lg-5 d-flex align-items-end justify-content-center justify-content-lg-end align-items-lg-center overflow-hidden"
               data-order="2"
             >
-              <h1 class="about-header">About</h1>
+              <h2 class="about-header">About</h2>
             </div>
             <div
               id="centerLine"
               class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center overflow-hidden"
               data-order="1"
             >
-              <div class="center-line"></div>
+              <div class="about__separator">
+                <svg viewBox="0 0 1 100" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0" y1="0" x2="0" y2="0"></line>
+                </svg>
+              </div>
             </div>
             <div
               class="col-lg-5 d-flex justify-content-center align-items-center justify-content-lg-start overflow-hidden"
             >
               <div class="about-text" data-order="3">
-                <p class="m-0">Web Developer</p>
-                <p class="m-0">Lifelong Learner</p>
-                <p class="m-0">Minimalist Design Lover</p>
+                <h2 class="m-0"><span>Web Developer</span></h2>
+                <h2 class="m-0"><span>Lifelong Learner</span></h2>
+                <h2 class="m-0"><span>Minimalist Design Lover</span></h2>
               </div>
             </div>
           </div>
         </section>
 
         <section id="portfolioContent">
-          <div class="portfolio-content row w-100 mx-auto">
+          <div class="portfolio-content row w-100 mx-auto gap-5 gap-md-0">
             <div
-              class="col-lg-5 d-flex align-items-end justify-content-center mb-5 mb-lg-0 justify-content-lg-end align-items-lg-center overflow-hidden"
+              class="col-lg-5 d-flex justify-content-center justify-content-lg-end align-items-lg-center overflow-hidden"
             >
               <div>
-                <h1 class="portfolio-header">PORTFOLIO</h1>
+                <h2 class="portfolio-header">PORTFOLIO</h2>
               </div>
             </div>
             <div
+              id="centerLine"
               class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center lg:overflow-hidden"
             >
-              <div class="portfolio-line"></div>
+              <div class="portfolio__separator">
+                <svg viewBox="0 0 1 100" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0" y1="0" x2="0" y2="0"></line>
+                </svg>
+              </div>
             </div>
             <div class="col-lg-5 portfolio-slider lg:overflow-hidden">
               <div class="slider">
                 <!-- Replace this with actual portfolio content or a slider -->
                 <div class="swiper mySwiper portfolio-swiper">
                   <div class="swiper-wrapper">
+                    <div class="swiper-slide portfolio-swiper-slide">
+                      <div class="card rounded-0 border-0 portfolio-card">
+                        <img src="images/project3.jpeg" alt="FreshCart" />
+                        <a
+                          href="https://o-marss.github.io/freshCart/"
+                          class="card-overlay"
+                        >
+                          <h2 class="project-name">FreshCart</h2>
+                        </a>
+                      </div>
+                    </div>
                     <div class="swiper-slide portfolio-swiper-slide">
                       <div class="card rounded-0 border-0 portfolio-card">
                         <img src="images/project1.jpeg" alt="Bookmarker" />
@@ -191,20 +293,7 @@
                         </a>
                       </div>
                     </div>
-                    <div class="swiper-slide portfolio-swiper-slide">
-                      <div class="card rounded-0 border-0 portfolio-card">
-                        <img
-                          src="images/project3.jpeg"
-                          alt="Daniels Portfolio"
-                        />
-                        <a
-                          href="https://o-marss.github.io/daniels/"
-                          class="card-overlay"
-                        >
-                          <h2 class="project-name">Daniels Portfolio</h2>
-                        </a>
-                      </div>
-                    </div>
+
                     <div class="swiper-slide portfolio-swiper-slide">
                       <div class="card rounded-0 border-0 portfolio-card">
                         <img src="images/project4.jpeg" alt="DailyForecasts" />
@@ -224,30 +313,32 @@
         </section>
 
         <section id="contactContent">
-          <div class="contact-content row w-100 mx-auto">
+          <div class="contact-content row w-100 mx-auto gap-5 gap-md-0">
             <div
-              class="col-lg-5 d-flex align-items-center justify-content-center mb-5 mb-lg-0 justify-content-lg-end align-items-lg-center overflow-hidden"
+              class="col-lg-5 d-flex align-items-center justify-content-center mb-0 justify-content-lg-end align-items-lg-center overflow-hidden mb-3 mb-lg-0"
             >
               <div>
-                <h1 class="contact-header">Contact</h1>
+                <h2 class="contact-header">Contact</h2>
               </div>
             </div>
             <div
               class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center overflow-hidden"
             >
-              <div class="contact-line"></div>
+              <div class="contact__separator">
+                <svg viewBox="0 0 1 100" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="0" y1="0" x2="0" y2="0"></line>
+                </svg>
+              </div>
             </div>
             <div class="col-lg-5 py-3 contact-form overflow-hidden">
               <div
                 class="row container position-relative form-container pb-5 pb-md-0"
               >
                 <div id="contactText" class="col contact-text">
-                  <div>
-                    <h2><span>Interested in working together?</span></h2>
-                    <h2 class="mb-5">
-                      <span>Let’s make something great.</span>
-                    </h2>
-                  </div>
+                  <h2><span>Interested in working together?</span></h2>
+                  <h2 class="mb-5">
+                    <span>Let’s make something great.</span>
+                  </h2>
                 </div>
                 <div
                   class="col-12 mb-5 row justify-content-center justify-content-lg-start"
@@ -268,7 +359,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-12 mb-5 row justify-content-center justify-content-lg-start"
+                  class="form col-12 mb-5 row justify-content-center justify-content-lg-start"
                 >
                   <div class="col-10 md:col-8 input-container">
                     <input
@@ -287,7 +378,7 @@
                 <div
                   class="col-12 mb-3 row justify-content-center justify-content-lg-start"
                 >
-                  <div class="col-10 md:col-8 input-container">
+                  <div class="form col-10 md:col-8 input-container">
                     <textarea
                       class="user-input textarea-input pb-0 z-3 bg-transparent"
                       name="message"
@@ -302,10 +393,8 @@
                     <span class="label-line"></span>
                   </div>
                 </div>
-                <div class="col-3 px-0">
-                  <button type="submit" class="btn send-btn">
-                    <span>Send</span>
-                  </button>
+                <div class="col-3 px-0 form-submit">
+                  <button type="submit" class="btn send-btn">Send</button>
                 </div>
               </div>
             </div>
@@ -322,7 +411,7 @@
             </div>
             <div>
               <div class="copyright_text">
-                © 2024 <span>Omar Mohamed</span> - All Rights Reserved
+                © 2025 <span>Omar Mohamed</span> - All Rights Reserved
               </div>
             </div>
           </div>
@@ -333,9 +422,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js"></script>
 
     <script src="js/index.js"></script>
   </body>

@@ -17,6 +17,7 @@
   .intro i {
     font-size: 1.25rem;
   }
+
   .intro-image {
     width: 565px;
   }
@@ -26,19 +27,23 @@
   }
 
   .about-header {
-    font-size: 90px;
+    font-size: 70px;
   }
 
   .about-header::after {
-    font-size: 75px;
+    font-size: 55px;
   }
 
   .about-text {
     font-size: 21px;
   }
 
+  #portfolioContent {
+    margin-top: 10vmax;
+  }
+
   .portfolio-content {
-    height: calc(0.5rem + 40vmax);
+    height: calc(1rem + 60vmax);
   }
 
   .portfolio-header {
@@ -50,21 +55,17 @@
     font-size: 3.4375rem;
   }
 
-  .portfolio-slider {
-    justify-content: center;
-  }
-
   .portfolio-swiper {
     width: 300px;
     height: 380px;
   }
 
   #contactContent {
-    margin-top: 20vmax;
+    margin-top: 10vmax;
   }
 
   .contact-content {
-    height: calc(0.5rem + 75vmax);
+    height: calc(1rem + 60vmax);
   }
 
   .contact-header {
@@ -110,7 +111,31 @@
   }
 
   .intro-image {
-    width: 650px;
+    width: 700px;
+  }
+
+  .about__separator svg {
+    height: calc(1rem + 24vh);
+    stroke-width: 1;
+    stroke: #fff;
+  }
+
+  .portfolio__separator svg {
+    height: calc(1.5rem + 35vh);
+    stroke-width: 1;
+    stroke: #fff;
+  }
+
+  .contact__separator {
+    display: block;
+    position: static;
+    padding: 5vw;
+  }
+
+  .contact__separator svg {
+    height: calc(10rem + 35vh);
+    stroke-width: 0.5;
+    stroke: #fff;
   }
 
   .form-container {
@@ -119,17 +144,32 @@
 }
 
 @media (min-width: 1200px) {
+  .loader-logo {
+    width: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .intro {
     justify-content: space-between;
   }
   .intro-image {
-    width: 530px;
+    width: 700px;
     left: 50%;
     transform: translateX(-50%);
   }
 
+  .intro-about h1 {
+    line-height: calc(1rem + 3.1vw);
+  }
+
   .about-content {
     height: 40vh;
+  }
+
+  .about-header::before {
+    display: none;
   }
 
   .about-text {
@@ -140,6 +180,10 @@
 
   .portfolio-content {
     height: 60vh;
+  }
+
+  .portfolio-header::before {
+    display: none;
   }
 
   .portfolio-slider {
@@ -158,6 +202,10 @@
 
   .contact-content {
     height: 65vh;
+  }
+
+  .contact-header::before {
+    display: none;
   }
 
   .contact-form {
@@ -183,6 +231,6 @@
 
 @media (min-width: 1400px) {
   .intro-image {
-    width: 600px;
+    width: 700px;
   }
 }
